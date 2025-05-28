@@ -28,7 +28,7 @@
   color: white;
   padding: 2rem;
   /* background-color: rgb(6, 6, 86); */
-  background: url("./img/img2.webp");
+  background: url("./img/menu-header-bg-img.webp");
   background-position: center;
   background-size: cover;
   
@@ -45,12 +45,36 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap:1rem;
+  margin-top: 2rem;
+  padding: 3rem;
 }
 .drinks{
-  width: 12rem;
+  /* width: 12rem; */
+  flex-basis: 17rem;
   text-align: center;
-  height: 12rem;
-  border: 1px solid green;
+  height: 15rem;
+  /* border: 2px solid green; */
   /* width: 200px; */
+   box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 10px 0 0 gray; */
+  /* background-color:rgba(86, 104, 104, 0.816); */
+  background-color: #e8f5e9;
+}
 
+.mantu >img{
+  /* background-size: cover; */
+  /* width:15rem; */
+  height: 9.2rem;
+  /* height: auto; */
+
+  /* padding: 0.2rem; */
+}
+.detail{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+p{
+  padding-left: 0.5rem;
 }
