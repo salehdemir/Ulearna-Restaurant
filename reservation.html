@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="form-container">
+    <h1 >Reservation</h1>
+    <form>
+      <label for="full-name">Full name</label>
+      <input type="text" id="full-name" placeholder="Your full name" />
+
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" />
+
+     
+        <div class="column">
+          <label for="date">Date and Time to come</label>
+         <input type="datetime-local" id="datetime" />
+        </div>
+   
+
+      <label for="number">Number of person</label>
+      <select id="number">
+        <option>How many person will attend</option>
+        <option>One Person</option>
+        <option>Two Person</option>
+        <option>Three Person</option>
+        <option>Four Person</option>
+        <option>Five Person</option>
+        <option>More ...</option>
+
+     
+      </select>
+
+      <label for="notes">Notes</label>
+      <textarea id="notes" placeholder="e.g. Please provide 2 baby chair..."></textarea>
+
+      <button type="submit">Continue</button>
+    </form>
+  </div>
+</body>
+</html>
