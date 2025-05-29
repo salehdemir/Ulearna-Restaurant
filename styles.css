@@ -1,37 +1,85 @@
 :root{
  --bcolor: whitesmoke;
  --Heading-font-family: "Caveat", sans-serif;
- --button-color:rgb(36, 154, 4);
-}
-h1,h2,h3,h4,h5{
-
-  font-family: var(--Heading-font-family);
-}
-.Rtitle{
-  text-align: center;
+ --main-color:rgb(36, 154, 4);
 }
 body {
   background-color: var(--bcolor);
+   font-family: var(--Heading-font-family);
+}
+.navbar{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.95);
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.navdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   /* background-color: rgba(245, 245, 245, 0.706); */
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 80%;
+    height: 3.5rem;
+    margin: 0 auto;
+  
+    padding: 0 2rem;
+}
+.logo{
+    font-size: 3rem;
+    color: orange;
+     transition: transform 0.3s;
+}
+.logo:hover{
+   transform: scale(1.1);
+}
+ .linklist {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+  list-style-type: none;
+ 
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.linklist a:hover {
+  border-bottom: solid 2px black;
+  transform: scale(1.1);
+}
+.btn{
+  margin-left: 5rem;
+   transition: transform 0.3s;
+}
+.btn:hover{
+   transform: scale(1.1);
+}
+.form-wrapper {
   display: flex;
   justify-content: center;
-  padding: 50px;
-
+  align-items: center;
+  padding: 2rem;
 }
 
 .form-container {
-  background: #fff;
-  padding: 30px;
+  background-color: rgba(245, 245, 245, 0.95);
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
-
-form label {
-  display: block;
-  margin-bottom: 6px;
-  margin-top: 20px;
-  font-weight: 500;
+.Rtitle{
+  text-align: center;
 }
 
 input, select, textarea {
@@ -39,27 +87,21 @@ input, select, textarea {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  font-size: 14px;
   margin-top: 4px;
   box-sizing: border-box;
 }
-
-textarea {
-  height: 80px;
-}
-button {
+.continue {
   margin-top: 25px;
   width: 100%;
   padding: 14px;
-  background-color: var(--button-color);
+  background-color: var(--main-color);
   color: white;
   font-size: 16px;
   border: none;
   border-radius: 50px;
-  cursor: pointer;
-}
 
-button:hover {
+}
+.continue:hover {
   background-color: #025e1c;
 }
 input:focus,
@@ -69,6 +111,8 @@ textarea:focus {
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
 }
+/*  
+
 
 .contact-footer {
   background-color: #f4f6fb;
@@ -184,4 +228,4 @@ thanks-container {
 .fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover{
     transform: scale(1.05);
 }
-
+ */
