@@ -161,3 +161,27 @@ textarea {
   color: #666;
   margin-top: 10px;
 }
+thanks-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  height: 100vh;         
+}
+
+.thank-img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ;
+}
+.thank-img:hover{
+    transform: scale(1.05);
+}
+.fa-facebook, .fa-instagram, .fa-tiktok{
+  font-size: 60px;
+  color: var(--button-color);
+    transition: transform 0.3s ;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover{
+    transform: scale(1.05);
+}
+
