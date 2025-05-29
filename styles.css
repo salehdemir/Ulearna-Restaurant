@@ -10,12 +10,41 @@
   list-style: none;
   text-decoration: none;
 }
+body{
+  background-color: rgba(220, 220, 220, 0.507);
+}
 
 .header{
   border: 2px solid red;
   height: 4rem;
   border-radius: 1rem;
   margin-top: 1rem;
+}
+.logo{
+    font-size: 3rem;
+    color: orange;
+}
+.navbar{
+    display: flex;
+    background-color: rgba(245, 245, 245, 0.706);
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    width: 80%;
+    height: 4rem;
+    margin: 0 auto;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 3px;
+    padding-left: 50px;
+}
+.btn{
+    display: flex;
+    margin-left: 10rem;
 }
 .menu-page-header{
   /* width: ; */
@@ -90,24 +119,88 @@
   /* width: 100vw; */
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border: 2px solid blue;
-  height: 18rem;
+  /* border: 2px solid blue; */
+  background: url("./img/break-section.jpg");
+  height: 14rem;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-position: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   /* background-attachment:fixed; */
 }
-.img-div-foods > img{
-  width: 100%;
-  height: 100%;
+.img-div-foods > h1{
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 17rem;
+  text-align: center;
+  /* align-self: center; */
+  color: orange;
 }
 
+/* ------------------------ drinks section img  ------------------------*/
 
+.img-div-drinks{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* border: 2px solid blue; */
+  background: url("./img/break-section.jpg");
+  height: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  
+}
+.img-div-drinks > h1{
+  background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 17rem;
+  text-align: center;
+  /* align-self: center; */
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+  color: orange;
+}
+
+/* ------------------------ liked foods section img  ------------------------*/
+.img-div-liked{
+    margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* border: 2px solid blue; */
+  background: url("./img/break-section.jpg");
+  height: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.img-div-liked > h1{
+    background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 20rem;
+  text-align: center;
+  /* align-self: center; */
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+  color: orange;
+}
 
 /* -------------------------------------- foods menu styling ----------------------------- */
 .menu-catagories{
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   justify-content: space-around;
   flex-wrap: wrap;
   gap:1rem;
@@ -121,7 +214,7 @@
   height: 17rem;
   /* border: 2px solid green; */
   box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-  background-color: #e8f5e9;
+    background-color: #e8f5e9;
 }
 .detail{
   display: flex;
@@ -145,7 +238,7 @@ a{
 
 .drinks-section-menu{
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   justify-content: space-around;
   flex-wrap: wrap;
   gap:1rem;
@@ -156,7 +249,7 @@ a{
 
 .liked{
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   justify-content: space-around;
   flex-wrap: wrap;
   gap:1rem;
