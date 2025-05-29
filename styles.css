@@ -1,0 +1,171 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #C14600;
+}
+section-one{
+   display: flex;
+   flex-direction: column;
+   background: url("./pic.jpg");
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.logo{
+    font-size: 3rem;
+    color: orange;
+}
+.navbar{
+    display: flex;
+    background-color: rgba(245, 245, 245, 0.706);
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 6rem; */
+    border: 1px solid black;
+    /* margin-top: 2rem; */
+    width: 80%;
+    height: 4rem;
+    margin: 0 auto;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 3px;
+    padding-left: 50px;
+
+}
+.btn{
+    display: flex;
+    margin-left: 10rem;
+}
+button{
+    text-align: center;
+    justify-content: center;
+    width: 10vh;
+    height: 2rem;
+}
+.reserve-btn{
+    display: inline-block;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-left: 24rem;
+    background-color: rgba(14, 14, 106, 0.238);
+    border-radius: 8px;
+}
+button:hover{
+    background-color: rgba(250, 235, 215, 0.663);
+    cursor: pointer;
+}
+.navbar a:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+    /* background-color: #a451225f; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.hero-section-content{
+    margin-top: 2rem;
+    width: 100vw;
+}
+.hero-text{
+    margin-top: 10rem;
+    margin-left: 6rem;
+    
+}
+.hero-text >h1{
+    margin-left: 4rem;
+    font-size: 2.5rem;
+    color: rgb(6, 50, 5);
+}
+.hero-text >h3{
+    margin-left: 13rem;
+    /* padding-bottom: 3rem; */
+    font-size: 1.5rem;
+}
+.hero-text >p{
+    text-decoration: underline;
+    margin-left: 15rem;
+    font-size: 1.5rem;
+}
+span{
+    color: rgba(199, 114, 4, 0.983);
+}
+
+/*section one is complert*/
+
+/* .section-two-content{ */
+/* } */
+
+.section-two{
+    height: 100vh;
+    margin-top: 28rem;
+}
+.section-two >h1{
+    text-decoration: underline;
+}
+h1{
+    margin-top: 4rem;
+    margin-left: 45vw;
+    font-size: 3rem;
+}
+.logo-cantanir{
+     display: flex;
+     justify-content: space-around;
+     margin-top: 8rem;
+     font-size: 2rem;
+}
+.one{
+ 
+    background-color: aqua;
+    border-radius: 8px;
+    height: 15rem;
+    width: 15rem;
+    text-align: center;
+    border: 1px solid black;
+}
+.two{
+    /* display: flex; */
+    background-color: red;
+    border-radius: 8px;
+    height: 15rem;
+    width: 15rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    border: 1px solid black;
+}
+.three{
+    display: flex;
+    background-color: green;
+    border-radius: 8px;
+    height: 15rem;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.man-img{
+    display: flex;
+    background-size: cover;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    width: 10rem;
+    height: 20rem;
+}
+div >h-tage{
+    display: flex;
+    float: left;
+    margin-right: 20rem;
+}
+.fa-truck{
+    margin-top: 25%;
+    padding-bottom: 30px;
+    color: #ff782a;
+    font-size: 6rem;
+}
