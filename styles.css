@@ -3,7 +3,11 @@
  --Heading-font-family: "Caveat", sans-serif;
  --button-color:rgb(36, 154, 4);
 }
-h1{
+h1,h2,h3,h4,h5{
+
+  font-family: var(--Heading-font-family);
+}
+.Rtitle{
   text-align: center;
 }
 body {
@@ -11,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 50px;
+
 }
 
 .form-container {
@@ -63,11 +68,6 @@ textarea:focus {
   border-color: green;
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 .contact-footer {

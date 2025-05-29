@@ -9,23 +9,23 @@
 <body>
   
   <div class="form-container">
-    <h1 >Reservation</h1>
-    <form>
+    <h1 class="Rtitle">Reservation</h1>
+    <form action="thankyou.html" method="get" id="reservation-form">
       <label for="full-name">Full name</label>
-      <input type="text" id="full-name" placeholder="Your full name" />
+      <input type="text" id="full-name" placeholder="Your full name" required/>
 
       <label for="phone">Phone number</label>
-      <input type="tel" id="phone" placeholder="Enter your phone number" />
+      <input type="tel" id="phone" placeholder="Enter your phone number" required/>
 
      
-        <div class="column">
+        <div class="dateAndTime">
           <label for="date">Date and Time to come</label>
-         <input type="datetime-local" id="datetime" />
+         <input type="datetime-local" id="datetime" required/>
         </div>
    
 
       <label for="number">Number of person</label>
-      <select id="number">
+      <select id="number" required>
         <option>How many person will attend</option>
         <option>One Person</option>
         <option>Two Person</option>
@@ -33,8 +33,6 @@
         <option>Four Person</option>
         <option>Five Person</option>
         <option>More ...</option>
-
-     
       </select>
 
       <label for="notes">Notes</label>
