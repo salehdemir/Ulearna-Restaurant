@@ -51,10 +51,21 @@
   padding: 1rem;
 
 }
+.btn-menu{
+  width: 9rem;
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: 10px;
+  border: 2px solid red;
+  background-color: orange;
+  text-transform: uppercase;
+}
 .menus-box{
-  flex-basis: 17rem;
+  /* flex-basis: 17rem; */
   text-align: center;
-  height: 15rem;
+  height: 16rem;
+  width: 22rem;
   box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
   background-color: #e8f5e9;
   padding: 1rem;
