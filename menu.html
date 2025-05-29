@@ -4,19 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- div form main page -->
   <div class="header">
   </div>
-  <div class="menu-page-header">
-    <H1>Foods Menu</H1>
-  </div>
-  <div class="menu-catagories">
-    <div class="drinks qaboli">
-      <img src="./img/foods/beef-qaboli.png" alt="">
-      <div class="detail">
+  <!-- end of div -->
+   <!-- ----------------------------------------menu page header ---------------------------------- -->
+   <div class="menu-page-header">
+     <H1>Foods Menu</H1>
+    </div>
+    <!-- ---------------------------------------end of menu page header ---------------------------------- -->
+  
+    <!-- ------------------------ foods Menu for selecting kinds food menu ---------------------------------- -->
+    <div class="foods-menu">
+      <div class="foods-m  menus-box" >
+        <h1><i class="fa-solid fa-utensils"></i> Foods</h1>
+        <h4>You're just a click away from exploring our delicious food selection. Let's find something tasty for you!</h4>
+        <div class="btn">
+           <a href="">See</a>
+        </div>
+      </div>
+      <div class="drinks-m menus-box" >
+         <h1> <i class="fa-solid fa-wine-glass"></i> Drinks</h1>
+        <h4>Quench your thirst with our refreshing selection of traditional and modern beverages. From rich Afghan teas to chilled fruit juices and fizzy favorites — there's something for everyone to enjoy.</h4>
+        <div class="btn">
+           <a href="">See</a>
+        </div>
+      </div>
+      <div class="most-liked-m menus-box" >
+       <h1>  <i class="fa-solid fa-heart"></i> liked</h1>
+         <h4>Discover the flavors that capture the heart of Afghan cuisine. From tender kababs and aromatic pilafs to hearty stews and savory dumplings, these dishes are favorites for every occasion.</h4>
+        <div class="btn">
+           <a href="">See</a>
+        </div>
+      </div>
+    </div>
+    <!-- -------------end  foods Menu for selecting kinds food menu -------------------------------- -->
+    
+    <!-- ------------------------ all foods  div---------------------------------- -->
+    <div class="menu-catagories " id="food">
+      <div class="drinks qaboli">
+        <img src="./img/foods/beef-qaboli.png" alt="">
+        <div class="detail">
         <h4>Kabuli قابلی پلو</h4>
         <h4>Price : 300</h4>
       </div>
@@ -25,33 +57,125 @@
       <div class="drinks mantu">
       <img src="./img/foods/manto-img.png" alt="">
       <div class="detail">
-      <h4>Mantu منتو</h2>
-        <h4>Price: 300 af</h4>
-      </div>
+        <h4>Mantu منتو</h2>
+          <h4>Price: 300 af</h4>
+        </div>
       <p>Steamed dumplings filled with ground beef and onions, topped with yogurt and split peas sauce</p>
+    </div>
+    <div class="drinks qofta">
+      <img src="./img/foods/gofta.jpeg" alt="">
+      <div class="detail">
+        <h4>Kofta کوفته</h2>
+          <h4>Price: 280 af</h4>
+      </div>
+      <p>Afghan-style meatballs cooked in a rich tomato-based sauce, often served with naan or rice.</p>
+    </div>
+    <div class="drinks kabab">
+      <img src="./img/foods/kabab.jpeg" alt="">
+      <div class="detail">
+        <h4>Kabab کباب</h2>
+          <h4>Price: 280 af</h4>
+        </div>
+        <p>Afghan-style meatballs cooked in a rich tomato-based sauce, often served with naan or rice.</p>
+      </div>
+      <div class="drinks">
+        <img src="./img/foods/qurma.jpg" alt="">
+      <div class="detail">
+        <h4>Qorma قرمه</h2>
+          <h4>Price: 280 af</h4>
+        </div>
+        <p>Afghan-style meatballs cooked in a rich tomato-based sauce, often served with naan or rice.</p>
+      </div>
+      
+      <div class="drinks">
+        <img src="./img/foods/chapli-kabab.png" alt="">
+      <div class="detail">
+        <h4>Chapli Kabab </h4>
+          <h5>Price: 280 af</h5>
+        </div>
+        <p>Afghan-style meatballs cooked in a rich tomato-based sauce, often served with naan or rice.</p>
+      </div>
+    <div class="drinks">
+      <img src="./img/foods/grilled.jpg" alt="">
+      <div class="detail">
+        <h4>Grilled Meat</h4>
+          <h5>Price: 280 af</h5>
+        </div>
+        <p>An assortment of grilled meats, sometimes presented on a decorative platter, offering a variety of flavors</p>
     </div>
     <div class="drinks">
-      <img src="./img/foods/manto-img.png" alt="">
+      <img src="./img/foods/chopan-kabab.jpg" alt="">
       <div class="detail">
-      <h4>Mantu منتو</h2>
-        <h4>Price: 300 af</h4>
-      </div>
-      <p>Steamed dumplings filled with ground beef and onions, topped with yogurt and split peas sauce</p>
+        <h4>Chopan kabab</h4>
+          <h5>Price: 280 af</h5>
+        </div>
+        <p>Skewered lamb chops marinated with traditional spices and grilled to perfection.</p>
     </div>
-    <div class="drinks">fast food </div>
-    <div class="drinks">most liked</div>
-
-    <div class="drinks">Drinks</div>
-    <div class="drinks">famouse food</div>
-    <div class="drinks">barbaque</div>
-    <div class="drinks">fast food </div>
-    <div class="drinks">most liked</div>
-    <div class="drinks">most liked</div>
-    <div class="drinks">most liked</div>
-    <div class="drinks">most liked</div>
-    <div class="drinks">most liked</div>
-    <div class="drinks">most liked</div>
-    <div class="drinks">most liked</div>
+    <div class="drinks">
+        <img src="./img/foods/ashak.jpg" alt="">
+      <div class="detail">
+        <h4>Ashak آشک</h4>
+          <h5>Price: 280 af</h5>
+        </div>
+      <p>Afghan dumplings filled with scallions or chives, served with a garlic yogurt sauce and meat sauce on top.</p>
+    </div>
+    <div class="drinks">
+      <img src="./img/foods/Bolani.jpg" alt="">
+      <div class="detail">
+        <h4>Bolani بولانی</h4>
+          <h5>Price: 20af</h5>
+        </div>
+      <p>Thin flatbread stuffed with potatoes, spinach, lentils, or pumpkin, usually pan-fried and served with yogurt or chutney</p>
+    </div>
+    <div class="drinks">
+      <img src="./img/foods/vegitable-soup.jpg" alt="">
+      <div class="detail">
+        <h4>Soup سوپ</h4>
+        <h4>Price : 30</h4>
+      </div>
+      <p> A warm, comforting bowl of slow-cooked goodness — made with tender chunks of meat or fresh vegetables, simmered in a rich</p>
+    </div>
+    <div class="drinks">
+      <img src="./img/foods/chekin-beryani.jpg" alt="">
+      <div class="detail">
+        <h4>Chekin Beryani</h4>
+        <h4>Price : 150</h4>
+      </div>
+      <p> A layered rice dish with marinated chicken, saffron, fried onions, and whole spices. Flavorful and festive.</p>
+    </div>
+    <div class="drinks">
+      <img src="./img/foods/chiken-curry.jpg" alt="">
+      <div class="detail">
+        <h4>Chicken Karahi</h4>
+        <h4>Price : 200</h4>
+      </div>
+      <p>Chicken chunks are stir-fried in a wok with tomatoes, green chilies, garlic, and spices.</p>
+    </div>
+    <div class="drinks">
+      <img src="./img/foods/mutton-karaei.jpg" alt="">
+      <div class="detail">
+        <h4>mutton curry</h4>
+        <h4>Price : 240</h4>
+      </div>
+      <p>Tender mutton cooked in a rich, spiced tomato and onion gravy. Full of flavor and best served with naan or rice.</p>
+    </div>
+    <div class="drinks">
+      <img src="./img/foods/butter-chiken-handi.jpg" alt="">
+      <div class="detail">
+        <h4>Butter Chicke</h4>
+        <h4>Price : 220</h4>
+      </div>
+      <p>Creamy and flavorful butter chicken cooked in a traditional handi, giving it a rich, smoky aroma. y tomato gravy with mild spices.</p>
+    </div>
+    <div class="drinks">
+       <img src="./img/foods/Achar-Gosht.jpg" alt="">
+      <div class="detail">
+        <h4>Achar Gosht</h4>
+        <h4>Price : 130</h4>
+      </div>
+      <p>A spicy and tangy meat curry made with mutton , beef or chiken, cooked in traditional achar (pickle) spices like mustard seeds.</p>
+    </div>
+    <!-- ------------------------  end of  all foods  div ---------------------------------- -->
   </div>
 </body>
 </html>
