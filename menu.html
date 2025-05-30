@@ -15,9 +15,9 @@
             <ul class="linklist">
            <li> <a href="Home.html">Home</a></li>
             <li><a href="Home.html#about">about</a></li>
-           <li> <a href="menu">menu</a></li>
-          <li>  <a href="#reservation">reservation</a></li>
-          <li>  <a href="Home.html#contact">contact</a></li>
+           <li> <a href="#menu">menu</a></li>
+          <li>  <a href="reservation.html">reservation</a></li>
+          <li>  <a href="#contact">contact</a></li>
           </ul>
           <div><button class="btn">Sign in</button></div>
           </div>
@@ -36,21 +36,21 @@
         <h1><i class="fa-solid fa-utensils"></i> Foods</h1>
         <h4>You're just a click away from exploring our delicious food selection. Let's find something tasty for you!</h4>
         <div class="btn">
-           <a href="#food" class="btn-menu">See</a>
+           <a href="#food" class="btn-menu">See More</a>
         </div>
       </div>
       <div class="drinks-m menus-box">
          <h1> <i class="fa-solid fa-wine-glass"></i> Drinks</h1>
         <h4>Quench your thirst with our refreshing Afghan teas, fruit juices, and fizzy drinks—something for everyone!</h4>
         <div class="btn">
-           <a href="#drinks-sec" class="btn-menu">See</a>
+           <a href="#drinks-sec" class="btn-menu">See More</a>
         </div>
       </div>
       <div class="most-liked-m menus-box" >
        <h1>  <i class="fa-solid fa-heart"></i>liked</h1>
          <h4>Savor Afghan favorites like kababs, pilafs, dumplings, stews, and more—delicious dishes for every taste!</h4>
         <div class="btn">
-           <a href="#liked" class="btn-menu">See</a>
+           <a href="#liked" class="btn-menu">See More</a>
         </div>
       </div>
     </div>
@@ -372,45 +372,52 @@
               <h4>Soup سوپ</h4>
               <h4>Price : 30</h4>
             </div>
+            <p>Thin flatbread stuffed with potatoes, spinach, lentils, or pumpkin, usually pan-fried and served with yogurt or chutney</p>
        </div>
       <!-- -----------------------End of Most liked Deshes -----------------------------  -->
     </div>
-    <!--  ----------------------------Footer Section -------------------------------------- -->
+    <!--  ----------------------------Footer Section -------------------------- -->
     <!-- Footer HTML -->
-        <footer class="main-footer">
-        <div class="footer-container">
-          <div class="footer-section contact">
-            <h3>Contact Us</h3>
-            <p>📍 Ulerna Resturant, Dehbori Squar 5th street </p>
-            <p>📞 +93 (0) 768298499</p>
-            <p>📧 ulernaresturant.com</p>
-            <p>🕒 Open: 24/7</p>
-          </div>
+     <footer id="contact" class="contact-footer">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Contact Us</h2>
+      <p>Email, call, or complete the form to learn how Ulearna can solve your messaging problem.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@Ulearna.io">info@Ulearna.af</a></p>
+      <p><strong>Phone:</strong> <a href="tel:321221231">93-781-231213</a></p>
 
-          <div class="footer-section follow">
-            <h3>Follow Us</h3>
-            <li><a href="#">Instagram</a> </li> 
-            <li><a href="#">Facebook</a> </li>
-            <li><a href="#">Twitter</a></li>
-            <!-- <p>@YourCafeHandle</p> -->
-          </div>
-
-          <div class="footer-section links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#aout">About Us</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#reserv">Reserv your Table</a></li>
-            </ul>
-          </div>
+      <div class="socialMedia">
+        <div>
+          <h4>Facebook</h4>
+         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
         </div>
-
-        <div class="footer-bottom">
-          <p>© 2025 Ulerna Resturant. All rights reserved.</p>
+        <div>
+          <h4>Instagram</h4>
+<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>     
+   </div>
+        <div>
+          <h4>TikTok</h4>
+<a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <p>You can reach us anytime</p>
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name" required>
         </div>
-      </footer>
+        <input type="email" placeholder="Your email" required>
+        <input type="tel" placeholder="Phone number" required>
+        <textarea placeholder="How can we help?" rows="5" required></textarea>
+        <button class="continue" type="submit">Submit</button>
+      </form>
+              <p class="form-note">By contacting us, you agree to our <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a>.</p>
+
+    </div>
+  </div>
+</footer>
       
       <!--  -------------------------end of Footer Section -------------------------------------- -->
 
