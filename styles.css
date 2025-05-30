@@ -1,6 +1,5 @@
 :root{
   --bg-color: #F2F2F2;
-  /* --bg-color: red; */
   --div-color: #EAE4D5;
   --btn-color: rgb(36,154,4);
   --font-family: 'Caveat', 'sans-serif';
@@ -19,15 +18,9 @@ body{
   font-family: var(--font-family);
 }
 
-/* .header{
-  border: 2px solid red;
-  height: 4rem;
-  border-radius: 1rem;
-  margin-top: 1rem;
-} */
 /* --------------------------  nav bar stayling ----------------------------------- */
 .navbar{
-    position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,18 +32,16 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-    border-radius: 5px;
-    /* border: 1px solid black; */
-    width: 80%;
-    height: 3.5rem;
-    margin: 0 auto;
-  
-    padding: 0 2rem;
+  border-radius: 5px;
+  width: 80%;
+  height: 3.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 .logo{
-    font-size: 3rem;
-    color: orange;
-     transition: transform 0.3s;
+  font-size: 3rem;
+  color: orange;
+  transition: transform 0.3s;
 }
 .logo:hover{
    transform: scale(1.1);
@@ -59,8 +50,6 @@ body{
   display: flex;
   align-items: center;
   gap: 2rem; 
-  list-style-type: none;
- 
 }
 .navbar a {
   text-decoration: none;
@@ -75,7 +64,6 @@ body{
   transform: scale(1.1);
 }
 .btn{
-  margin-left: 5rem;
    transition: transform 0.3s;
    padding: 5px;
 }
@@ -87,27 +75,18 @@ body{
 
 /* --------------------------- menu page hero -------------------------------- */
 .menu-page-header{
-  /* width: ; */
   height: 30rem;
-  /* margin-top: 1rem; */
+  width: 100%;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   color: white;
-  /* padding-top: 0; */
   padding: 2rem;
-
-  /* background-color: rgb(6, 6, 86); */
   background: url("./img/menu-header-bg-img.webp");
-  /* opacity: 0.7; */
   background-position: center;
   background-size: cover;
-  
-  /* background-position-x:; */
   background-repeat: no-repeat;
-  /* height: auto; */
 }
 .menu-page-header > h1{
   font-size: 5rem;
@@ -115,8 +94,7 @@ body{
 /* -------------------------------------- foods menu styling ----------------------------- */
 .foods-menu{
   display: flex;
-  /* background: ; */
-  gap: 2rem;
+  gap: 0.5rem;
   justify-content: space-evenly;
   margin-top: 2rem;
   padding: 1rem;
@@ -128,7 +106,6 @@ body{
   display: inline-block;
   padding: 0.2rem;
   border-radius: 10px;
-  /* border: 2px solid red; */
   background-color: var(--btn-color);
   text-transform: uppercase;
   color: #fff;
@@ -137,37 +114,35 @@ body{
   background-color: var(--button-color-hover);
 }
 .menus-box{
-  /* flex-basis: 17rem; */
   text-align: center;
   height: 16rem;
-  width: 22rem;
+  /* width: 15rem; */
   box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
   background-color: var(--div-color);
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  gap: 1rem;
-  /* text-align: center; */
-  justify-content: flex-start;
-
-  align-items: center;
+  /* align-items: baseline; */
+  gap: 0.5rem;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 .menus-box > h1{
   font-size: 3rem;
 }
+.menus-box h4{
+  line-height: 1.3rem;
+}
 .fa-solid {
   font-size: 2.5rem;
-  /* color: red; */
 }
 /* ------------------------------------     img div menus ------------------------------------------ */
 .img-div-foods{
-  /* width: 100vw; */
   margin-top: 2rem;
   margin-bottom: 2rem;
-  /* border: 2px solid blue; */
   background: url("./img/break-section.jpg");
   height: 14rem;
+  /* width: 65rem; */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -175,17 +150,13 @@ body{
   align-items: center;
   background-position: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  /* background-attachment:fixed; */
 }
 .img-div-foods > h1{
-  /* width: 100%; */
-  /* height: 100%; */
   background-color: #fff;
   height: 4rem;
   font-size: 2.5rem;
   width: 17rem;
   text-align: center;
-  /* align-self: center; */
   color: orange;
 }
 
@@ -194,7 +165,6 @@ body{
 .img-div-drinks{
   margin-top: 2rem;
   margin-bottom: 2rem;
-  /* border: 2px solid blue; */
   background: url("./img/break-section.jpg");
   height: 14rem;
   background-repeat: no-repeat;
@@ -204,7 +174,6 @@ body{
   align-items: center;
   background-position: center;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  
 }
 .img-div-drinks > h1{
   background-color: #fff;
@@ -212,8 +181,6 @@ body{
   font-size: 2.5rem;
   width: 17rem;
   text-align: center;
-  /* align-self: center; */
-  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
   color: orange;
 }
 
@@ -221,7 +188,6 @@ body{
 .img-div-liked{
     margin-top: 2rem;
   margin-bottom: 2rem;
-  /* border: 2px solid blue; */
   background: url("./img/break-section.jpg");
   height: 14rem;
   background-repeat: no-repeat;
@@ -238,8 +204,6 @@ body{
   font-size: 2.5rem;
   width: 20rem;
   text-align: center;
-  /* align-self: center; */
-  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
   color: orange;
 }
 
@@ -256,7 +220,7 @@ body{
 .drinks{
   /* width: 12rem; */
   flex-basis: 17rem;
-  text-align: center;
+  /* text-align: right; */
   height: 17rem;
   /* border: 2px solid orange; */
   box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
@@ -274,7 +238,7 @@ p{
   text-align: left;
   font-size: 0.9rem;
 }
-img{
+.drinks img{
   /* height: 9.2rem; */
   width: 17rem;
   height: 10rem;
@@ -310,11 +274,13 @@ a{
 .contact-footer {
   background-color: var(--bgcolor);
   padding: 60px 80px;
+  /* border: 1px solid red; */
 }
 .contact-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 60px;
 }
 .contact-left {
@@ -324,7 +290,30 @@ a{
   color: black;
   text-decoration: none;
 }
-
+.contact-left > h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact-left > p{
+  font-size: 1.4rem;
+  line-height:1.8rem;
+}
+.contactform input, .contactform textarea{
+    width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+.contactform input:focus, .contactform textarea:focus{
+  border-color: var(--btn-color);
+  outline: none; 
+  box-shadow: 0 0 0 2px rgba(0, 128,0,0.2);
+}
+.contactform textarea{
+  resize: none;
+}
 .socialMedia {
   display: flex;
   gap: 30px;
@@ -360,7 +349,8 @@ a{
 }
 
 .form-note {
-  font-size: 12px;
+  font-size: 0.7rem;
+  font-weight: bolder;
   color: black;
   margin-top: 40px;
 }
@@ -370,9 +360,9 @@ a{
     transition: transform 0.3s ;
 }
 .fa-instagram{
-    font-size: 60px;
+  font-size: 60px;
   color: #f15757;
-    transition: transform 0.3s ;
+  transition: transform 0.3s ;
 }
 .fa-tiktok{
 color: black;
@@ -399,4 +389,56 @@ color: black;
 }
 .socialMedia h4{
   margin-bottom: 1.5rem;
+}
+
+
+
+
+/* ------------------------- Making The menu page resposive ---------------------- */
+
+@media(max-width:768px){
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-div-foods , .img-div-drinks , .img-div-liked{
+    width: 100%;
+  }
+.menu-page-header{
+  width: 100%;
+  justify-content: center;
+  background-size:cover;
+} 
+.socialMedia {
+  /* order: -3; */
+  /* display: none; */
+}
+
+
+.contact-container{
+    display: block;
+    text-align: center;
+   
+  }
+  .socialMedia{
+    margin-bottom: 4rem;
+  }
+  .contact-right {
+ 
+  padding: 16px 12px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex: 1;
+
+
+}
+.contact-right{
+  margin: 0 auto;
+}
+.contact-right p{
+  text-align: center;
+  font-weight: bolder;
+}
 }
