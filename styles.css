@@ -265,16 +265,18 @@ a{
   color: #f1f1f1;
   padding: 1.5rem;
   font-family: Arial, sans-serif;
-  width: 100vw;
+  width: 100%;
   margin-top: 2rem;
+  /* display: flex; */
+  border: 2px solid red;
   /* margin-bottom: 0; */
 }
 
 .footer-container {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   gap: 30px;
   /* max-width: 1200px; */
   /* margin: 0 auto; */
@@ -321,4 +323,8 @@ a{
   border-top: 1px solid #444;
   font-size: 14px;
   color: #aaa;
+}
+.follow > li{
+  line-height: 2rem;
+  /* font-size: 1.2rem; */
 }
