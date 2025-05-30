@@ -307,73 +307,96 @@ a{
 }
 
 /* -----------------------------  footer style -------------------------------------- */
-
-/* Footer CSS */
-.main-footer {
-  background-color: #2b2b2b;
-  color: #f1f1f1;
-  padding: 1.5rem;
-  font-family: Arial, sans-serif;
-  width: 100%;
-  margin-top: 2rem;
-  /* display: flex; */
-  /* border: 2px solid red; */
-  /* margin-bottom: 0; */
+.contact-footer {
+  background-color: var(--bgcolor);
+  padding: 60px 80px;
 }
-
-.footer-container {
+.contact-container {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  /* border: 2px solid red; */
-  gap: 30px;
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 60px;
 }
-
-.footer-section {
-  flex: 1 1 250px;
+.contact-left {
+  flex: 1.2;
 }
-
-.footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.footer-section p,
-.footer-section li {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #cccccc;
-}
-
-.footer-section a {
-  color: #f1f1f1;
+.contact-left a {
+  color: black;
   text-decoration: none;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
+.socialMedia {
+  display: flex;
+  gap: 30px;
+  margin-top: 8rem;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
+.socialMedia > div {
+  flex: 1;
+  min-width: 180px;
 }
 
-.footer-section ul li {
-  margin-bottom: 6px;
+.contact-right {
+  background: var(--div-color);
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex: 1;
+  max-width: 450px;
 }
 
-.footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #444;
-  font-size: 14px;
-  color: #aaa;
+.contact-right form {
+  display: flex;
+  flex-direction: column;
 }
-.follow > li{
-  line-height: 2rem;
-  /* font-size: 1.2rem; */
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.form-note {
+  font-size: 12px;
+  color: black;
+  margin-top: 40px;
+}
+.fa-facebook{
+  font-size: 60px;
+  color: blue;
+    transition: transform 0.3s ;
+}
+.fa-instagram{
+    font-size: 60px;
+  color: #f15757;
+    transition: transform 0.3s ;
+}
+.fa-tiktok{
+color: black;
+  font-size: 60px;
+    transition: transform 0.3s ;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover{
+    transform: scale(1.05);
+ 
+}
+.continue {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background-color: var(--btn-color);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+
+}
+.continue:hover {
+  background-color: var(--button-color-hover);
+}
+.socialMedia h4{
+  margin-bottom: 1.5rem;
 }
