@@ -1,12 +1,24 @@
+/* main styles */
 :root{
- --bcolor: whitesmoke;
- --Heading-font-family: "Caveat", sans-serif;
- --main-color:rgb(36, 154, 4);
+ --bgcolor: #F2F2F2;
+ --divcolor:#EAE4D5;
+ --font-family: "Caveat", sans-serif;
+ --button-color:rgb(36, 154, 4);
+ --button-color-hover:#025e1c;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 body {
-  background-color: var(--bcolor);
+  background-color: var(--bgcolor);
    font-family: var(--Heading-font-family);
 }
+/* nav bar styles */
 .navbar{
     position: fixed;
   top: 0;
@@ -20,9 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-   /* background-color: rgba(245, 245, 245, 0.706); */
     border-radius: 5px;
-    border: 1px solid black;
     width: 80%;
     height: 3.5rem;
     margin: 0 auto;
@@ -40,7 +50,7 @@ body {
  .linklist {
   display: flex;
   align-items: center;
-  gap: 1rem; 
+  gap: 2rem; 
   list-style-type: none;
  
 }
@@ -59,10 +69,13 @@ body {
 .btn{
   margin-left: 5rem;
    transition: transform 0.3s;
+   padding: 5px;
 }
 .btn:hover{
    transform: scale(1.1);
 }
+
+/* reservation page styles */
 .form-wrapper {
   display: flex;
   justify-content: center;
@@ -71,7 +84,7 @@ body {
 }
 
 .form-container {
-  background-color: rgba(245, 245, 245, 0.95);
+  background-color: var(--divcolor);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -94,7 +107,7 @@ input, select, textarea {
   margin-top: 25px;
   width: 100%;
   padding: 14px;
-  background-color: var(--main-color);
+  background-color: var(--button-color);
   color: white;
   font-size: 16px;
   border: none;
@@ -102,68 +115,48 @@ input, select, textarea {
 
 }
 .continue:hover {
-  background-color: #025e1c;
+  background-color: var(--button-color-hover);
 }
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: green;
+  border-color: var(--button-color);
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
 }
-/*  
-
-
+/* contact styles */
 .contact-footer {
-  background-color: #f4f6fb;
+  background-color: var(--bgcolor);
   padding: 60px 80px;
 }
-
 .contact-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 60px;
-  max-width: 1280px;
-  margin: auto;
 }
-
 .contact-left {
   flex: 1.2;
 }
-
-.contact-left h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.contact-left p,
 .contact-left a {
-  color: #333;
-  margin-bottom: 8px;
+  color: black;
   text-decoration: none;
 }
 
-.support-link {
-  font-weight: bold;
-  color: #0066ff;
-  display: inline-block;
-  margin: 15px 0;
-}
-
-.info-sections {
+.socialMedia {
   display: flex;
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 8rem;
+ 
 }
 
-.info-sections > div {
+.socialMedia > div {
   flex: 1;
   min-width: 180px;
 }
 
 .contact-right {
-  background: #fff;
+  background: var(--divcolor);
   padding: 30px 25px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -171,16 +164,10 @@ textarea:focus {
   max-width: 450px;
 }
 
-.contact-right h3 {
-  margin-top: 0;
-  font-size: 24px;
-}
-
 .contact-right form {
   display: flex;
   flex-direction: column;
 }
-
 .form-row {
   display: flex;
   gap: 10px;
@@ -191,22 +178,37 @@ textarea:focus {
   flex: 1;
 }
 
-input,
-textarea {
-  padding: 12px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  width: 100%;
-}
 .form-note {
   font-size: 12px;
-  color: #666;
-  margin-top: 10px;
+  color: black;
+  margin-top: 40px;
 }
-thanks-container {
+.fa-facebook{
+  font-size: 60px;
+  color: blue;
+    transition: transform 0.3s ;
+}
+.fa-instagram{
+    font-size: 60px;
+  color: #f15757;
+    transition: transform 0.3s ;
+}
+.fa-tiktok{
+color: black;
+  font-size: 60px;
+    transition: transform 0.3s ;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover{
+    transform: scale(1.05);
+ 
+}
+.socialMedia h4{
+  margin-bottom: 1.5rem;
+}
+/* thanks page styles */
+.thanks-container {
   display: flex;
+   flex-direction: column;
   justify-content: center; 
   align-items: center;   
   height: 100vh;         
@@ -220,12 +222,15 @@ thanks-container {
 .thank-img:hover{
     transform: scale(1.05);
 }
-.fa-facebook, .fa-instagram, .fa-tiktok{
-  font-size: 60px;
-  color: var(--button-color);
-    transition: transform 0.3s ;
+.thanksheading{
+  font-size: 48px;
+ color: rgb(129, 206, 13);
+ transition: trasform 0.5s;
 }
-.fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover{
-    transform: scale(1.05);
+.thanksheading:hover{
+  transform: scale(1.1);
 }
- */
+
+
+
+
