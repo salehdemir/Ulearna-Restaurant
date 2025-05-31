@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- --------------------------------- nav bar --------------------------------- -->
-   <nav class="navbar">
+   <!-- <nav class="navbar">
 
     <div class="navdiv">
             <div class="logo"><i class="fa-solid fa-bowl-food"></i> <span>Ulearna</span></div>
@@ -23,8 +23,30 @@
           <div><button class="btn">Sign in</button></div>
         </div>
         
-  </nav>
-
+  </nav> -->
+  <input type="checkbox" id="nav-toggle" />
+  <nav class="navbar">
+            <div class="logo"><i class="fa-solid fa-bowl-food"></i> <span>ulearna</span></div>
+             <label for="nav-toggle" class="burger" aria-label="Toggle menu" tabindex="0" role="button">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+            <div class="linklist">
+            <a href="Home.html">Home</a>
+            <a href="Home.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="reservation.html">reservation</a>
+            <a href="Home.html#contact">contact</a>
+          </div>
+          <button class="btn">Sign in</button>
+     </nav>
+              <div class="sidebar">
+    <label for="nav-toggle" class="close-btn" aria-label="Close menu" tabindex="0" role="button"> <i class="fas fa-times"></i></label>
+    <a href="Home.html">Home</a>
+    <a href="Home.html#about">About</a>
+    <a href="menu.html">menu</a>
+    <a href="home.html#contact">Contact</a>
+    <a href="#">Sign In</a>
+  </div>
   <!--  --------------------------end of nav ---------------------------------- -->
    <!-- ----------------------------------------menu page header ---------------------------------- -->
    <div id="menu" class="menu-page-header">
@@ -378,48 +400,46 @@
     </div>
     <!--  ----------------------------Footer Section -------------------------- -->
     <!-- Footer HTML -->
-     <footer id="contact" class="contact-footer">
+    <footer id="contact" class="contact-footer">
   <div class="contact-container">
     <div class="contact-left">
       <h2>Contact Us</h2>
       <p>Email, call, or complete the form to learn how Ulearna can solve your messaging problem.</p>
       <p><strong>Email:</strong> <a href="mailto:info@Ulearna.io">info@Ulearna.af</a></p>
       <p><strong>Phone:</strong> <a href="tel:321221231">93-781-231213</a></p>
-      
+
       <div class="socialMedia">
         <div>
           <h4>Facebook</h4>
          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
         </div>
-            <div>
-              <h4>Instagram</h4>
-              <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>     
+        <div>
+          <h4>Instagram</h4>
+<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>     
+   </div>
+        <div>
+          <h4>TikTok</h4>
+<a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+</div>
       </div>
-            <div>
-              <h4>TikTok</h4>
-    <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-  </div>
-          </div>
+    </div>
+    <div class="contact-right">
+      <p>You can reach us anytime</p>
+      <form class="contactform">
+        <div class="form-row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name" required>
         </div>
-   
-        <div class="contact-right">
-          <p>You can reach us anytime</p>
-          <form class="contactform">
-            <div class="form-row">
-              <input type="text" placeholder="First name" required>
-              <input type="text" placeholder="Last name" required>
-            </div>
-            <input type="email" placeholder="Your email" required>
-            <input type="tel" placeholder="Phone number" required>
-            <textarea placeholder="How can we help?" rows="5" required></textarea>
-            <button class="continue" type="submit">Submit</button>
-          </form>
-                  <p class="form-note">By contacting us, you agree to our <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a>.</p>
+        <input type="email" placeholder="Your email" required>
+        <input type="tel" placeholder="Phone number" required>
+        <textarea placeholder="How can we help?" rows="5" required></textarea>
+        <button class="continue" type="submit">Submit</button>
+      </form>
+              <p class="form-note">By contacting us, you agree to our <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a>.</p>
 
-        </div>
-        </div>
-      </footer>
-            
+    </div>
+  </div>
+</footer>.        
       <!--  -------------------------end of Footer Section -------------------------------------- -->
 
 
