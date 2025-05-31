@@ -50,7 +50,7 @@ body{
 
 .logo{
     font-size: 2rem;
-    color: orange;
+    color: var(--button-color);
      transition: transform 0.3s;
      cursor: pointer;
 }
@@ -73,8 +73,8 @@ body{
   border-bottom: solid 2px black;
   transform: scale(1.1);
 }
-.btn{
-  margin-left: 5rem;
+.btn-menus{
+  /* margin-left: 5rem; */
    transition: transform 0.3s;
  padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -275,7 +275,7 @@ body{
 .menu-catagories{
   display: flex;
   /* border: 2px solid red; */
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap:1rem;
   margin-top: 2rem;
@@ -478,7 +478,7 @@ color: black;
 }
  
 
-
+  /*  menu page */
 
   .img-div-foods , .img-div-drinks , .img-div-liked{
     width: 100%;
@@ -493,6 +493,8 @@ color: black;
     text-align: center;
    
   }
+  
+  /* footer contact */
   .socialMedia{
     margin-bottom: 4rem;
   }
