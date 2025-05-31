@@ -14,6 +14,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 body {
   background-color: var(--bgcolor);
    font-family: var(--Heading-font-family);
@@ -33,8 +34,6 @@ body {
   padding: 0.5rem; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional shadow */
 }
-
-
 .logo{
     font-size: 2rem;
      transition: transform 0.3s;
@@ -59,6 +58,7 @@ body {
   border-bottom: solid 2px black;
   transform: scale(1.1);
 }
+
 .btn{
   margin-left: 5rem;
    transition: transform 0.3s;
@@ -119,21 +119,198 @@ body {
       right: 0;
     }
 
-   
-    @media (max-width: 768px) {
-      .linklist,
-      .btn {
-        display: none;
-      }
-
-      .burger {
-        display: block;
-      }
-      .logo{
-    font-size: 1.5rem;
-    
+/* --------------------------- menu page hero -------------------------------- */
+.menu-page-header{
+  height: 30rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+  background: url("./img/menu-header-bg-img.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-    }
+.menu-page-header > h1{
+  font-size: 5rem;
+}
+/* -------------------------------------- foods menu styling ----------------------------- */
+.foods-menu{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  padding: 1rem;
+
+}
+.btn-menu{
+  width: 9rem;
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  text-transform: uppercase;
+  color: #fff;
+}
+.btn-menu:hover{
+  background-color: var(--button-color-hover);
+}
+.menus-box{
+  text-align: center;
+  height: 16rem;
+  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--divcolor);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.menus-box > h1{
+  font-size: 3rem;
+}
+.menus-box h4{
+  line-height: 1.3rem;
+}
+.fa-solid {
+  font-size: 2.5rem;
+}
+/* ------------------------------------     img div menus ------------------------------------------ */
+.img-div-foods{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: url("./img/break-section.jpg");
+  height: 14rem;
+  /* width: 65rem; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.img-div-foods > h1{
+  background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 17rem;
+  text-align: center;
+  color: orange;
+}
+
+/* ------------------------ drinks section img  ------------------------*/
+
+.img-div-drinks{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: url("./img/break-section.jpg");
+  height: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.img-div-drinks > h1{
+  background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 17rem;
+  text-align: center;
+  color: orange;
+}
+
+/* ------------------------ liked foods section img  ------------------------*/
+.img-div-liked{
+    margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: url("./img/break-section.jpg");
+  height: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.img-div-liked > h1{
+    background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 20rem;
+  text-align: center;
+  color: orange;
+}
+
+/* -------------------------------------- foods menu styling ----------------------------- */
+.menu-catagories{
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap:1rem;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+.drinks{
+  /* width: 12rem; */
+  flex-basis: 17rem;
+  /* text-align: right; */
+  height: 17rem;
+  /* border: 2px solid orange; */
+  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--divcolor);
+  border-radius: 10px;
+}
+.detail{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+p{
+  padding-left: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.drinks img{
+  /* height: 9.2rem; */
+  width: 17rem;
+  height: 10rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
+}
+a{
+  color: black;
+}
+
+.drinks-section-menu{
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap:1rem;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+/* -----------------------  most liked Delshes----------------------------------- */
+
+.liked{
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap:1rem;
+  margin-top: 2rem;
+  padding: 3rem;
+}
 
 /* reservation page styles */
 .form-wrapper {
@@ -283,15 +460,6 @@ color: black;
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
 }
-/* thanks page styles */
-.thanks-container {
-  display: flex;
-   flex-direction: column;
-  justify-content: center; 
-  align-items: center;   
-  height: 100vh;         
-}
-
 .thank-img {
   max-width: 100%;
   height: auto;
@@ -308,24 +476,78 @@ color: black;
 .thanksheading:hover{
   transform: scale(1.1);
 }
-/* footer media query */
-@media (max-width:768px) {
-  .contact-container{
+/* ------------------------- Making The menu page resposive ---------------------- */
+
+@media(max-width:768px){
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/*  nav page  */
+
+  
+      .linklist,
+      .btn {
+        display: none;
+      }
+
+      .burger {
+        display: block;
+      }
+      .logo{
+    font-size: 1.5rem;
+    
+}
+ 
+
+  /*  menu page */
+
+  .img-div-foods , .img-div-drinks , .img-div-liked{
+    width: 100%;
+  }
+.menu-page-header{
+  width: 100%;
+  justify-content: center;
+  background-size:cover;
+} 
+.contact-container{
     display: block;
     text-align: center;
    
   }
+  
+  /* footer contact */
   .socialMedia{
     margin-bottom: 4rem;
   }
   .contact-right {
- 
   padding: 16px 12px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   flex: 1;
-  max-width: 300px;
-  
+}
+.contact-right{
+  margin: 0 auto;
+
+}
+
+.contact-right p{
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+
+/* thanks page styles */
+.thanks-container {
+  display: flex;
+   flex-direction: column;
+  justify-content: center; 
+  align-items: center;   
+  height: 100vh;         
 }
 
   .fa-facebook,.fa-instagram,.fa-tiktok{
