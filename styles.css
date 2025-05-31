@@ -482,13 +482,10 @@ color: black;
     margin-bottom: 4rem;
   }
   .contact-right {
- 
   padding: 16px 12px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   flex: 1;
-
-
 }
 .contact-right{
   margin: 0 auto;
@@ -545,6 +542,4 @@ color: black;
   text-align: center;
   font-weight:bolder
 }
-
-
 }
