@@ -283,6 +283,55 @@ color: black;
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
 }
+@media (max-width:768px) {
+  .contact-container{
+    display: block;
+    text-align: center;
+   
+  }
+  .socialMedia{
+    margin-bottom: 4rem;
+  }
+  .contact-right {
+ 
+  padding: 16px 12px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex: 1;
+  max-width: 300px;
+  
+}
+  .fa-facebook{
+  font-size: 30px;
+ 
+}
+.fa-instagram{
+    font-size: 30px;
+
+}
+.fa-tiktok{
+
+  font-size: 30px;
+  
+}
+.contact-left > h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact-left > p{
+  font-size: 1rem;
+  line-height:1.5rem;
+}
+.contact-right{
+  margin: 0 auto;
+}
+.contact-right p{
+  text-align: center;
+  font-weight:bolder
+}
+
+}
+
 
 /* thanks page styles */
 .thanks-container {
