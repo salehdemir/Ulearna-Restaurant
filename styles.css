@@ -18,6 +18,7 @@
 body {
   background-color: var(--bgcolor);
    font-family: var(--Heading-font-family);
+   cursor: default;
 }
 
 /* nav Bar */
@@ -37,13 +38,15 @@ body {
 .logo{
     font-size: 2rem;
      transition: transform 0.3s;
-     cursor: pointer;
+     cursor: default;
+     color: var(--button-color);
 }
 .logo:hover{
    transform: scale(1.1);
 }
  .linklist {
   display: flex;
+  font-family: var(--font-family);
   align-items: center;
   gap: 2rem; 
 }
@@ -51,6 +54,7 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   color: black;
+  cursor: default;
   transition: transform 0.3s;
 }
 
@@ -60,12 +64,13 @@ body {
 }
 
 .btn{
-  margin-left: 5rem;
-   transition: transform 0.3s;
+ margin-left: 5rem;
+ transition: transform 0.3s;
  padding: 0.5rem 1rem;
-  border-radius: 4px;
-   font-size: 1rem;
-    cursor: pointer;
+ border-radius: 4px;
+ font-size: 1rem;
+ font-family: var(--font-family);
+  cursor: default;
    
 }
 
@@ -480,6 +485,221 @@ color: black;
 .thanksheading:hover{
   transform: scale(1.1);
 }
+
+
+
+/* thanks page styles */
+.thanks-container {
+  display: flex;
+   flex-direction: column;
+  justify-content: center; 
+  align-items: center;   
+  height: 100vh;         
+}
+
+  .fa-facebook,.fa-instagram,.fa-tiktok{
+  font-size: 30px;
+ 
+}
+.contact-left > h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact-left > p{
+  font-size: 1rem;
+  line-height:1.5rem;
+}
+.contact-right{
+  margin: 0 auto;
+}
+.contact-right p{
+  text-align: center;
+  font-weight:bolder
+}
+
+
+    /*  */
+
+    .section-one{
+   background: url("./assesst/image/newimg-mainpage2.png");
+   /* background-color: ; */
+   height: 90vh;
+   width: 100vw;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+
+    .reserve-btn{
+    /* display: inline-block; */
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    font-family: var(--font-family);
+    margin-top: 3rem;
+    border: var(--button-color);
+    margin-left: 7rem;
+    background-color: var(--button-color);
+    border-radius: 8px;
+}
+.reserve-btn:hover{
+background-color: var(--button-color-hover);
+color: var(--bgcolor);
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+    .hero-text >h1{
+    /* margin-left: 2rem; */
+    font-size: 2.1rem;
+    /* color: rgb(6, 50, 5); */
+    color: var(--bgcolor);
+    margin-top: 9rem;
+    font-family: var(--font-family);
+   
+}
+.hero-text >h3{
+    /* margin-left: 13rem; */
+    /* padding-bottom: 3rem; */
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: var(--bgcolor);
+}
+.hero-text >p{
+    /* text-decoration: underline; */
+    /* margin-left: 15rem; */
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+    font-family: var(--font-family);
+    color: var(--bgcolor);
+}
+.homespan{
+   color: var(--button-color);
+}
+
+/* section two */
+.section-two{
+    height: 100vh;
+    margin-top: 4rem;
+}
+.section-two >h1{
+    text-decoration: underline;
+    padding-top: 3rem;
+}
+.Foodie-Head{
+    margin-top: 4rem;
+    margin-left: 42vw;
+    font-size: 3rem;
+}
+.logo-cantanir{
+     display: flex;
+     justify-content: space-around;
+     margin-top: 8rem;
+     font-size: 2rem;
+    }
+  .one{
+        
+        background-color: var(--divcolor);
+        border-radius: 8px;
+        height: 18rem;
+        width: 18rem;
+        text-align: center;
+        border: 1px solid black;
+        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+    }
+    .one:hover{
+        transform: scale(1.1);   
+    }
+    .two{
+        background-color: var(--divcolor);
+        border-radius: 8px;
+        height: 18rem;
+        width: 18rem;
+        text-align: center;
+        border: 1px solid black;
+        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+    }
+    .two:hover{
+        transform: scale(1.1);   
+    }
+   .three{
+        background-color: var(--divcolor);
+        border-radius: 8px;
+        height: 18rem;
+        width: 18rem;
+        text-align: center;
+        border: 1px solid black;
+        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+}
+.three:hover{
+    transform: scale(1.1);
+}
+.aboutlogo{
+    margin-top: 25%;
+    padding-bottom: 30px;
+    color: var(--button-color);
+    font-size: 3rem;
+   
+}
+.man-img {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 3rem 6rem;
+  gap: 6rem;
+}
+
+.mainImage {
+  flex: 0 0 30%;
+  z-index: 2;
+  position: relative;
+}
+
+.mainImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-block {
+  flex: 1;
+  margin-left: -5%;
+  position: relative;
+  z-index: 1;
+  /* background-color: #ff782a; */
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.text-block > h1{
+    font-size: 2.4rem;
+}
+.text-block > p{
+    font-size: 1.5rem;
+}
+.review{
+    display: flex;
+    justify-content: space-around; 
+    gap: 5rem;
+    /* margin-left: 8rem; */
+    margin-top: 2rem;
+    font-size: 2.2rem;
+}
+#title-h1{
+  margin-bottom: 1rem;
+}
+
 /* ------------------------- Making The menu page resposive ---------------------- */
 
 @media(max-width:768px){
@@ -542,205 +762,14 @@ color: black;
   text-align: center;
   font-weight: bolder;
 }
-}
-
-
-/* thanks page styles */
-.thanks-container {
-  display: flex;
-   flex-direction: column;
-  justify-content: center; 
-  align-items: center;   
-  height: 100vh;         
-}
-
-  .fa-facebook,.fa-instagram,.fa-tiktok{
-  font-size: 30px;
- 
-}
-.contact-left > h2{
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.contact-left > p{
-  font-size: 1rem;
-  line-height:1.5rem;
-}
-.contact-right{
-  margin: 0 auto;
-}
-.contact-right p{
-  text-align: center;
-  font-weight:bolder
-}
-
-
-    /*  */
-
     .section-one{
-   background: url("./assesst/image/pic.jpg");
-   height: 100vh;
+   background: url("./assesst/image/newimg-mainpage2.png");
+   /* background-color: ; */
+   height: 90vh;
+   width: 100vw;
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
 
-
-    .reserve-btn{
-    display: inline-block;
-    width: 15rem;
-    height: 3rem;
-    font-size: 1.3rem;
-    margin-top: 3rem;
-    margin-left: 30rem;
-    background-color: var(--button-color);
-    border-radius: 8px;
 }
-.reserve-btn:hover{
-background-color: var(--button-color-hover);
-}
-
-.hero-text{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20rem;
-}
-
-    .hero-text >h1{
-    /* margin-left: 2rem; */
-    font-size: 2.5rem;
-    color: rgb(6, 50, 5);
-    margin-top: 10rem;
-   
-}
-.hero-text >h3{
-    /* margin-left: 13rem; */
-    /* padding-bottom: 3rem; */
-    font-size: 1.5rem;
-    margin-top: 3rem;
-}
-.hero-text >p{
-    text-decoration: underline;
-    /* margin-left: 15rem; */
-    font-size: 1.5rem;
-    margin-top: 3rem;
-}
-.homespan{
-   color: var(--button-color);
-}
-
-/* section two */
-.section-two{
-    height: 100vh;
-    margin-top: 4rem;
-}
-.section-two >h1{
-    text-decoration: underline;
-    padding-top: 3rem;
-}
-.Foodie-Head{
-    margin-top: 4rem;
-    margin-left: 42vw;
-    font-size: 3rem;
-}
-.logo-cantanir{
-     display: flex;
-     justify-content: space-around;
-     margin-top: 8rem;
-     font-size: 2rem;
-    }
-  .one{
-        
-        background-color: var(--divcolor);
-        border-radius: 8px;
-        height: 20rem;
-        width: 20rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-    }
-    .one:hover{
-        transform: scale(1.1);   
-    }
-    .two{
-        background-color: var(--divcolor);
-        border-radius: 8px;
-        height: 20rem;
-        width: 20rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-    }
-    .two:hover{
-        transform: scale(1.1);   
-    }
-   .three{
-        background-color: var(--divcolor);
-        border-radius: 8px;
-        height: 20rem;
-        width: 20rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-}
-.three:hover{
-    transform: scale(1.1);
-}
-.aboutlogo{
-    margin-top: 25%;
-    padding-bottom: 30px;
-    color: var(--button-color);
-    font-size: 3rem;
-   
-}
-.man-img {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin: 3rem 6rem;
-  gap: 6rem;
-}
-
-.mainImage {
-  flex: 0 0 30%;
-  z-index: 2;
-  position: relative;
-}
-
-.mainImage img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.text-block {
-  flex: 1;
-  margin-left: -5%;
-  position: relative;
-  z-index: 1;
-  /* background-color: #ff782a; */
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-}
-.text-block > h1{
-    font-size: 2.4rem;
-}
-.text-block > p{
-    font-size: 1.5rem;
-}
-.review{
-    display: flex;
-    justify-content: space-around; 
-    gap: 5rem;
-    margin-left: 8rem;
-    font-size: 2.2rem;
-}
-
-
