@@ -6,9 +6,9 @@ A simple restaurant management project that helps streamline operations like res
 
 ## 👥 Group Members & Contributions
 
-- **Saleh** – Hero Section
-- **Zabi** – Nav Bar
-- **Hejaz** – Footer
+- **Saleh** – landing page
+- **Zabi** – contact and reserve page
+- **Hejaz** – menu
 
 ---
 
