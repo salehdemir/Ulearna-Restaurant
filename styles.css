@@ -19,7 +19,8 @@ body {
   background-color: var(--bgcolor);
    font-family: var(--Heading-font-family);
 }
-/* nav bar styles */
+
+/* nav Bar */
 .navbar {
   position: fixed;
   top: 0;
@@ -35,7 +36,6 @@ body {
 }
 .logo{
     font-size: 2rem;
-    color: orange;
      transition: transform 0.3s;
      cursor: pointer;
 }
@@ -549,18 +549,10 @@ color: black;
   align-items: center;   
   height: 100vh;         
 }
-  .fa-facebook{
+
+  .fa-facebook,.fa-instagram,.fa-tiktok{
   font-size: 30px;
  
-}
-.fa-instagram{
-    font-size: 30px;
-
-}
-.fa-tiktok{
-
-  font-size: 30px;
-  
 }
 .contact-left > h2{
   font-size: 2rem;
