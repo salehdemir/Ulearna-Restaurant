@@ -1,10 +1,21 @@
-:root{
-  --bg-color: #F2F2F2;
+
+  /* --bg-color: #F2F2F2;
   --div-color: #EAE4D5;
   --btn-color: rgb(36,154,4);
   --font-family: 'Caveat', 'sans-serif';
-  --button-color-hover: #025E1C;
-} 
+  --button-color-hover: #025E1C; */
+
+
+
+  :root{
+ --bgcolor: #F2F2F2;
+ --divcolor:#EAE4D5;
+ --font-family: "Caveat", sans-serif;
+ --button-color:rgb(36, 154, 4);
+ --button-color-hover:#025e1c;
+}
+
+
 
 *{
   margin: 0;
@@ -18,60 +29,9 @@ body{
   font-family: var(--font-family);
 }
 
-/* --------------------------  nav bar stayling ----------------------------------- */
-/* .navbar{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.95);
-  z-index: 1;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.navdiv{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 5px;
-  width: 80%;
-  height: 3.5rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-.logo{
-  font-size: 3rem;
-  color: orange;
-  transition: transform 0.3s;
-}
-.logo:hover{
-   transform: scale(1.1);
-}
- .linklist {
-  display: flex;
-  align-items: center;
-  gap: 2rem; 
-}
-.navbar a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: black;
-  transition: transform 0.3s;
-  display: inline-block;
-}
 
-.linklist a:hover {
-  border-bottom: solid 2px black;
-  transform: scale(1.1);
-}
-.btn{
-   transition: transform 0.3s;
-   padding: 5px;
-}
-.btn:hover{
-   transform: scale(1.1);
-} */
 
-        /* ------------------------- dr nav ---------------------------------- */
+        /* ------------------------- nav ---------------------------------- */
 
         .navbar {
   position: fixed;
@@ -79,7 +39,7 @@ body{
   left: 0;
   width: 100%;
   z-index: 1; 
-  background-color: var(--bg-color);
+  background-color: var(--bgcolor);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,7 +101,7 @@ body{
       right: -250px;
       width: 250px;
       height: 100vh;
-      background: var(--div-color);
+      background: var(--divcolor);
       color: black;
       padding: 1rem;
       display: flex;
@@ -174,20 +134,7 @@ body{
     }
 
    
-    @media (max-width: 768px) {
-      .linklist,
-      .btn {
-        display: none;
-      }
 
-      .burger {
-        display: block;
-      }
-      .logo{
-    font-size: 1.5rem;
-    
-}
-    }
 
 
 /* --------------------------- menu page hero -------------------------------- */
@@ -223,7 +170,7 @@ body{
   display: inline-block;
   padding: 0.2rem;
   border-radius: 10px;
-  background-color: var(--btn-color);
+  background-color: var(--button-color);
   text-transform: uppercase;
   color: #fff;
 }
@@ -235,7 +182,7 @@ body{
   height: 16rem;
   /* width: 15rem; */
   box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-  background-color: var(--div-color);
+  background-color: var(--divcolor);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -341,7 +288,7 @@ body{
   height: 17rem;
   /* border: 2px solid orange; */
   box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-  background-color: var(--div-color);
+  background-color: var(--divcolor);
   border-radius: 10px;
 }
 .detail{
@@ -389,7 +336,7 @@ a{
 
 /* -----------------------------  footer style -------------------------------------- */
 .contact-footer {
-  background-color: var(--bg-color);
+  background-color: var(--bgcolor);
   padding: 60px 20px;
 }
 .contact-container {
@@ -424,7 +371,7 @@ a{
 }
 
 .contact-right {
-  background: var(--div-colorcolor);
+  background: var(--divcolor);
   padding: 30px 25px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -481,7 +428,7 @@ color: black;
   box-sizing: border-box;
 }
 .contactform input:focus, .contactform textarea:focus{
-    border-color: var(--btn-color);
+    border-color: var(--button-color);
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
 }
@@ -489,7 +436,7 @@ color: black;
   margin-top: 25px;
   width: 100%;
   padding: 14px;
-  background-color: var(--btn-color);
+  background-color: var(--button-color);
   color: white;
   font-size: 16px;
   border: none;
@@ -499,7 +446,75 @@ color: black;
 .continue:hover {
   background-color: var(--button-color-hover);
 }
-@media (max-width:768px) {
+
+
+
+
+
+/* ------------------------- Making The menu page resposive ---------------------- */
+
+@media(max-width:768px){
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/*  nav page  */
+
+  
+      .linklist,
+      .btn {
+        display: none;
+      }
+
+      .burger {
+        display: block;
+      }
+      .logo{
+    font-size: 1.5rem;
+    
+}
+ 
+
+
+
+  .img-div-foods , .img-div-drinks , .img-div-liked{
+    width: 100%;
+  }
+.menu-page-header{
+  width: 100%;
+  justify-content: center;
+  background-size:cover;
+} 
+.contact-container{
+    display: block;
+    text-align: center;
+   
+  }
+  .socialMedia{
+    margin-bottom: 4rem;
+  }
+  .contact-right {
+ 
+  padding: 16px 12px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex: 1;
+
+
+}
+.contact-right{
+  margin: 0 auto;
+}
+.contact-right p{
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* contact page */
+
   .contact-container{
     display: block;
     text-align: center;
@@ -546,50 +561,5 @@ color: black;
   font-weight:bolder
 }
 
-}
 
-
-
-
-/* ------------------------- Making The menu page resposive ---------------------- */
-
-@media(max-width:768px){
-  
-  body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .img-div-foods , .img-div-drinks , .img-div-liked{
-    width: 100%;
-  }
-.menu-page-header{
-  width: 100%;
-  justify-content: center;
-  background-size:cover;
-} 
-.contact-container{
-    display: block;
-    text-align: center;
-   
-  }
-  .socialMedia{
-    margin-bottom: 4rem;
-  }
-  .contact-right {
- 
-  padding: 16px 12px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  flex: 1;
-
-
-}
-.contact-right{
-  margin: 0 auto;
-}
-.contact-right p{
-  text-align: center;
-  font-weight: bolder;
-}
 }
