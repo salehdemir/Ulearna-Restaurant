@@ -3,74 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ulearna resturent</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- color= #C14600 -->
 </head>
 <body>
-  <input type="checkbox" id="nav-toggle" />
-  <nav class="navbar">
-            <div class="logo"><i class="fa-solid fa-bowl-food"></i> <span>ulearna</span></div>
-             <label for="nav-toggle" class="burger" aria-label="Toggle menu" tabindex="0" role="button">
-      <i class="fa-solid fa-bars"></i>
-    </label>
-            <div class="linklist">
-            <a href="Home.html">Home</a>
-            <a href="Home.html">about</a>
-            <a href="menu.html">menu</a>
-            <a href="reservation.html">reservation</a>
-            <a href="Home.html#contact">contact</a>
-          </div>
-          <button class="btn">Sign in</button>
-     </nav>
-              <div class="sidebar">
-    <label for="nav-toggle" class="close-btn" aria-label="Close menu" tabindex="0" role="button"> <i class="fas fa-times"></i></label>
-    <a href="Home.html">Home</a>
-    <a href="Home.html#about">About</a>
-    <a href="menu.html">menu</a>
-    <a href="home.html#contact">Contact</a>
-    <a href="#">Sign In</a>
-  </div>
-    <section class="section-one">    
-        <div class="hero-text">
-            <h1><b><i>Welcome to <span class="homespan">ULEARNA</span> RESTURANT</i></b></h1>
-            <h3>Delicious Moments Await</h3>
-            <p>Savor handcrafted dishes made with the freshest ingredients,<br> served in a warm and inviting atmosphere. <br>Whether you're craving comfort food or culinary adventure,<br> we're here to satisfy every bite.</p>
+     <footer id="contact" class="contact-footer">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Contact Us</h2>
+      <p>Email, call, or complete the form to learn how Ulearna can solve your messaging problem.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@Ulearna.io">info@Ulearna.af</a></p>
+      <p><strong>Phone:</strong> <a href="tel:321221231">93-781-231213</a></p>
+
+      <div class="socialMedia">
+        <div>
+          <h4>Facebook</h4>
+         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
         </div>
-      
-       <div><button class="reserve-btn">Reserve your Table</button></div>
-        </section>
-            <section class="section-two">
-                <h1 class="Foodie-Head">Why Foodie's</h1>
-                <div class="logo-cantanir">
-                    <div class="one about"><div><i class="fa-solid fa-list-check aboutlogo"></i></div>
-                        easy to order</div>
-                    <div class="two about"> <div><i class="fa-solid fa-truck aboutlogo"></i></div>
-                        fastest delivery</div>
-                    <div class="three about"><div><i class="fa-solid fa-star-half-stroke aboutlogo"></i></div>
-                        Best quality</div>
-                </div>
-             <div class="man-img">
-  <div class="mainImage">
-    <img src="./assesst/image/main-dish.jpg" alt="Main dish">
-  </div>
-  <div class="text-block">
-    <h1>A Little Information for Our Guest</h1>
-    <p>
-      Here we attach brief data about our Wistra coffee space <br> that will make it easier
-      for our guests <br> at our cafe to get to know us better.
-    </p>
-    <div  class="review" >
-        <h3>15k+</h3>
-        <h3>10+</h3>
-        <h3>30+</h3>
+        <div>
+          <h4>Instagram</h4>
+<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>     
+   </div>
+        <div>
+          <h4>TikTok</h4>
+<a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <p>You can reach us anytime</p>
+      <form class="contactform">
+        <div class="form-row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name" required>
+        </div>
+        <input type="email" placeholder="Your email" required>
+        <input type="tel" placeholder="Phone number" required>
+        <textarea placeholder="How can we help?" rows="5" required></textarea>
+        <button class="continue" type="submit">Submit</button>
+      </form>
+              <p class="form-note">By contacting us, you agree to our <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a>.</p>
+
     </div>
   </div>
-</div>
-           </section>
+</footer>
 </body>
 </html>
