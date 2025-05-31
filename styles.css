@@ -366,11 +366,15 @@ a{
 .contact-footer {
   background-color: var(--bgcolor);
   padding: 60px 20px;
+  margin-top:4rem ;
 }
 .contact-container {
   display: flex;
   justify-content: space-between;
   gap: 60px;
+}
+.footersection{
+  margin-top: 20rem;
 }
 
 .contact-left a {
