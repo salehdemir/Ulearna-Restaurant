@@ -523,8 +523,8 @@ color: black;
     .section-one{
    background: url("./assesst/image/newimg-mainpage2.png");
    /* background-color: ; */
-   height: 90vh;
-   width: 100vw;
+   height: 100vh;
+   /* width: 100vw; */
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -539,7 +539,7 @@ color: black;
     font-family: var(--font-family);
     margin-top: 3rem;
     border: var(--button-color);
-    margin-left: 7rem;
+    margin-left: 6rem;
     background-color: var(--button-color);
     border-radius: 8px;
 }
@@ -572,7 +572,7 @@ color: var(--bgcolor);
 }
 .hero-text >p{
     /* text-decoration: underline; */
-    /* margin-left: 15rem; */
+    margin-left: -0.5rem;
     font-size: 1.3rem;
     margin-top: 1.7rem;
     font-family: var(--font-family);
@@ -593,7 +593,7 @@ color: var(--bgcolor);
 }
 .Foodie-Head{
     margin-top: 4rem;
-    margin-left: 42vw;
+    margin-left: 31rem;
     font-size: 3rem;
 }
 .logo-cantanir{
@@ -683,7 +683,7 @@ justify-content: flex-start;
 align-items: flex-start;
 }
 .text-block > h1{
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 .text-block > p{
     font-size: 1.5rem;
@@ -762,14 +762,94 @@ align-items: flex-start;
   text-align: center;
   font-weight: bolder;
 }
+
     .section-one{
    background: url("./assesst/image/newimg-mainpage2.png");
    /* background-color: ; */
-   height: 90vh;
-   width: 100vw;
+   height: 100vh;
+   /* width: 100vw; */
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
+.section-one{
+  width: 100vw;
+  height: 70vh;
+  justify-content: center;
+  background-size:cover;
+} 
+.hero-text > h1{
+  margin-top: 12rem;
+  font-size: 1.7rem;
+}
 
+.hero-text > h3{
+  /* margin-top: 12rem; */
+  font-size: 1.5rem;
+}
+
+.man-img {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* margin: 3rem 6rem; */
+  margin: 0;
+  /* gap: 6rem; */
+  gap: 4rem;
+  /* font-size: 1.5rem; */
+}
+#img-about{
+  width: 18rem;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  height: 18rem;
+}
+.text-block{
+  padding: 0;
+}
+.text-block {
+  font-size: 1.3rem;
+}
+.one{
+        
+        background-color: var(--divcolor);
+        border-radius: 8px;
+        height: 18rem;
+        width: 14rem;
+        text-align: center;
+        border: 1px solid black;
+        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+    }
+    .one:hover{
+        transform: scale(1.1);   
+    }
+    .two{
+        background-color: var(--divcolor);
+        border-radius: 8px;
+        height: 18rem;
+        width: 14rem;
+        text-align: center;
+        border: 1px solid black;
+        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+    }
+    .two:hover{
+        transform: scale(1.1);   
+    }
+   .three{
+        background-color: var(--divcolor);
+        border-radius: 8px;
+        height: 18rem;
+        width: 14rem;
+        text-align: center;
+        border: 1px solid black;
+        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+}
+.Foodie-Head{
+    margin-top: 4rem;
+    margin-left: 17rem;
+    font-size: 3rem;
+}
 }
