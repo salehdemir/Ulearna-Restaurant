@@ -21,19 +21,19 @@ body {
    cursor: default;
 }
 
-/* nav Bar */
+/* nav Bar Saleh */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1; 
+  z-index: 2; 
   background-color: var(--bgcolor);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional shadow */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 .logo{
     font-size: 2rem;
@@ -124,200 +124,8 @@ body {
       right: 0;
     }
 
-/* --------------------------- menu page hero -------------------------------- */
-.menu-page-header{
-  height: 30rem;
-  width: 100%;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 2rem;
-  background: url("./img/menu-header-bg-img.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.menu-page-header > h1{
-  font-size: 5rem;
-}
-/* -------------------------------------- foods menu styling ----------------------------- */
-.foods-menu{
-  display: flex;
-  gap: 0.5rem;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-  padding: 1rem;
-
-}
-.btn-menu{
-  width: 9rem;
-  margin-top: 2rem;
-  display: inline-block;
-  padding: 0.2rem;
-  border-radius: 10px;
-  background-color: var(--button-color);
-  text-transform: uppercase;
-  color: #fff;
-}
-.btn-menu:hover{
-  background-color: var(--button-color-hover);
-}
-.menus-box{
-  text-align: center;
-  height: 16rem;
-  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-  background-color: var(--divcolor);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.menus-box > h1{
-  font-size: 3rem;
-}
-.menus-box h4{
-  line-height: 1.3rem;
-}
-.fa-solid {
-  font-size: 2.5rem;
-}
-/* ------------------------------------     img div menus ------------------------------------------ */
-.img-div-foods{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: url("./img/break-section.jpg");
-  height: 14rem;
-  /* width: 65rem; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-.img-div-foods > h1{
-  background-color: #fff;
-  height: 4rem;
-  font-size: 2.5rem;
-  width: 17rem;
-  text-align: center;
-  color: orange;
-}
-
-/* ------------------------ drinks section img  ------------------------*/
-
-.img-div-drinks{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: url("./img/break-section.jpg");
-  height: 14rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-}
-.img-div-drinks > h1{
-  background-color: #fff;
-  height: 4rem;
-  font-size: 2.5rem;
-  width: 17rem;
-  text-align: center;
-  color: orange;
-}
-
-/* ------------------------ liked foods section img  ------------------------*/
-.img-div-liked{
-    margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: url("./img/break-section.jpg");
-  height: 14rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-}
-.img-div-liked > h1{
-    background-color: #fff;
-  height: 4rem;
-  font-size: 2.5rem;
-  width: 20rem;
-  text-align: center;
-  color: orange;
-}
-
-/* -------------------------------------- foods menu styling ----------------------------- */
-.menu-catagories{
-  display: flex;
-  /* border: 2px solid red; */
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap:1rem;
-  margin-top: 2rem;
-  padding: 3rem;
-}
-.drinks{
-  /* width: 12rem; */
-  flex-basis: 17rem;
-  /* text-align: right; */
-  height: 17rem;
-  /* border: 2px solid orange; */
-  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-  background-color: var(--divcolor);
-  border-radius: 10px;
-}
-.detail{
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-}
-p{
-  padding-left: 0.5rem;
-  text-align: left;
-  font-size: 0.9rem;
-}
-.drinks img{
-  /* height: 9.2rem; */
-  width: 17rem;
-  height: 10rem;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
-}
-a{
-  color: black;
-}
-
-.drinks-section-menu{
-  display: flex;
-  /* border: 2px solid red; */
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap:1rem;
-  margin-top: 2rem;
-  padding: 3rem;
-}
-/* -----------------------  most liked Delshes----------------------------------- */
-
-.liked{
-  display: flex;
-  /* border: 2px solid red; */
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap:1rem;
-  margin-top: 2rem;
-  padding: 3rem;
-}
-
-/* reservation page styles */
+    
+/* reservation page styles Saleh */
 .form-wrapper {
   display: flex;
   justify-content: center;
@@ -367,7 +175,7 @@ a{
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
 }
 
-/* footer contact styles */
+/* footer contact styles  Saleh*/
 .contact-footer {
   background-color: var(--bgcolor);
   padding: 60px 20px;
@@ -378,8 +186,9 @@ a{
   justify-content: space-between;
   gap: 60px;
 }
+
 .footersection{
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 .contact-left a {
@@ -391,7 +200,7 @@ a{
   margin-bottom: 2rem;
 }
 .contact-left > p{
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height:1.8rem;
    margin-bottom: 2rem;
 }
@@ -406,15 +215,39 @@ a{
 .socialMedia > div {
   flex: 1;
 }
-
-.contact-right {
-  background: var(--divcolor);
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  min-width: 300px;
+.socialMedia h4{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
-
+.fa-facebook{
+  font-size: 4rem;
+  color: blue;
+    transition: transform 0.3s ;
+    margin-left: 2rem;
+}
+.fa-instagram{
+    font-size: 4rem;
+  color: #f15757;
+    transition: transform 0.3s ;
+    margin-left: 2rem;
+}
+.fa-tiktok{
+color: black;
+  font-size: 4rem;
+    transition: transform 0.3s ;
+    margin-left: 1rem;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover{
+    transform: scale(1.05);
+ 
+}
+.contact-right{
+  margin: 0 auto;
+}
+.contact-right p{
+  text-align: center;
+  font-weight:bolder
+}
 .contact-right form {
   display: flex;
   flex-direction: column;
@@ -425,36 +258,12 @@ a{
   margin-bottom: 10px;
 }
 
-.form-note {
-  font-size: 12.8px;
-    font-weight: bolder;
-  color: black;
-  margin-top: 40px;
-}
-.contactform textarea{
-  resize:none;
-}
-.fa-facebook{
-  font-size: 60px;
-  color: blue;
-    transition: transform 0.3s ;
-}
-.fa-instagram{
-    font-size: 60px;
-  color: #f15757;
-    transition: transform 0.3s ;
-}
-.fa-tiktok{
-color: black;
-  font-size: 60px;
-    transition: transform 0.3s ;
-}
-.fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover{
-    transform: scale(1.05);
- 
-}
-.socialMedia h4{
-  margin-bottom: 1.5rem;
+.contact-right {
+  background: var(--divcolor);
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  min-width: 300px;
 }
 .contactform input, .contactform textarea{
     width: 100%;
@@ -468,6 +277,25 @@ color: black;
     border-color: var(--button-color);
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
+}
+.form-note {
+  font-size: 12.8px;
+    font-weight: bolder;
+  color: black;
+  margin-top: 40px;
+}
+.contactform textarea{
+  resize:none;
+}
+
+
+/* thanks page styles Saleh */
+.thanks-container {
+  display: flex;
+   flex-direction: column;
+  justify-content: center; 
+  align-items: center;   
+  height: 100vh;         
 }
 .thank-img {
   max-width: 100%;
@@ -487,52 +315,208 @@ color: black;
 }
 
 
-
-/* thanks page styles */
-.thanks-container {
-  display: flex;
-   flex-direction: column;
-  justify-content: center; 
-  align-items: center;   
-  height: 100vh;         
-}
-
-  .fa-facebook,.fa-instagram,.fa-tiktok{
-  font-size: 30px;
- 
-}
-.contact-left > h2{
-  font-size: 2rem;
+/* --------------------------- menu page hero Ejaaz-------------------------------- */
+.menu-page-header{
+  height: 30rem;
+  width: 100%;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+  background: url("./img/menu-header-bg-img.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.contact-left > p{
-  font-size: 1rem;
-  line-height:1.5rem;
+.menu-page-header > h1{
+  font-size: 5rem;
 }
-.contact-right{
-  margin: 0 auto;
+/* --------------------------------- foods menu styling Ejaaz ---------------------- */
+.foods-menu{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  padding: 1rem;
+
 }
-.contact-right p{
+.btn-menu{
+  width: 9rem;
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  text-transform: uppercase;
+  color: #fff;
+}
+.btn-menu:hover{
+  background-color: var(--button-color-hover);
+}
+.menus-box{
   text-align: center;
-  font-weight:bolder
+  height: 16rem;
+  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--divcolor);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.menus-box > h1{
+  font-size: 3rem;
+}
+.menus-box h4{
+  line-height: 1.3rem;
+}
+.fa-solid {
+  font-size: 2.5rem;
+}
+/* ----------------------------     img div menus Ejaaz------------------------------ */
+.img-div-foods{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: url("./img/break-section.jpg");
+  height: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.img-div-foods > h1{
+  background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 17rem;
+  text-align: center;
+  color: orange;
+}
+
+/* ------------------------ drinks section img Ejaaz ------------------------*/
+
+.img-div-drinks{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: url("./img/break-section.jpg");
+  height: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.img-div-drinks > h1{
+  background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 17rem;
+  text-align: center;
+  color: orange;
+}
+
+/* ------------------------ liked foods section img Ejaaz ------------------------*/
+.img-div-liked{
+    margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: url("./img/break-section.jpg");
+  height: 14rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.img-div-liked > h1{
+    background-color: #fff;
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 20rem;
+  text-align: center;
+  color: orange;
+}
+
+/* ----------------------------- foods menu styling Ejaaz----------------------- */
+.menu-catagories{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap:1rem;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+.drinks{
+  flex-basis: 17rem;
+  height: 17rem;
+  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--divcolor);
+  border-radius: 10px;
+  transition: transform 0.5s ease;  
+}
+.drinks:hover{
+  transform: scale(1.1);
+}
+.detail{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+p{
+  padding-left: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.drinks img{
+  width: 17rem;
+  height: 10rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
+}
+a{
+  color: black;
+}
+
+.drinks-section-menu{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap:1rem;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+/* ------------------  most liked Delshes Ejaaz------------------------------ */
+
+.liked{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap:1rem;
+  margin-top: 2rem;
+  padding: 3rem;
 }
 
 
-    /*  */
+
+
+    /* Section One  zabi*/
 
     .section-one{
    background: url("./assesst/image/newimg-mainpage2.png");
-   /* background-color: ; */
    height: 100vh;
-   /* width: 100vw; */
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
-
-
     .reserve-btn{
-    /* display: inline-block; */
     width: 15rem;
     height: 3rem;
     font-size: 1.3rem;
@@ -555,23 +539,18 @@ color: var(--bgcolor);
 }
 
     .hero-text >h1{
-    /* margin-left: 2rem; */
     font-size: 2.1rem;
-    /* color: rgb(6, 50, 5); */
     color: var(--bgcolor);
     margin-top: 9rem;
     font-family: var(--font-family);
    
 }
 .hero-text >h3{
-    /* margin-left: 13rem; */
-    /* padding-bottom: 3rem; */
     font-size: 1.5rem;
     margin-top: 2rem;
     color: var(--bgcolor);
 }
 .hero-text >p{
-    /* text-decoration: underline; */
     margin-left: -0.5rem;
     font-size: 1.3rem;
     margin-top: 1.7rem;
@@ -582,7 +561,7 @@ color: var(--bgcolor);
    color: var(--button-color);
 }
 
-/* section two */
+/* section two About page Zabi*/
 .section-two{
     height: 100vh;
     margin-top: 4rem;
@@ -659,7 +638,6 @@ color: var(--bgcolor);
 
 .mainImage {
   flex: 0 0 30%;
-  z-index: 2;
   position: relative;
 }
 
@@ -667,6 +645,10 @@ color: var(--bgcolor);
   width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+.mainImage img:hover{
+  transform: scale(1.1);
 }
 
 .text-block {
@@ -674,7 +656,6 @@ color: var(--bgcolor);
   margin-left: -5%;
   position: relative;
   z-index: 1;
-  /* background-color: #ff782a; */
   padding: 1rem 2rem;
   border-radius: 8px;
   display: flex;
@@ -692,7 +673,6 @@ align-items: flex-start;
     display: flex;
     justify-content: space-around; 
     gap: 5rem;
-    /* margin-left: 8rem; */
     margin-top: 2rem;
     font-size: 2.2rem;
 }
@@ -710,14 +690,13 @@ align-items: flex-start;
     align-items: center;
   }
 
-/*  nav page  */
+/*  nav page  Responsive */
 
   
       .linklist,
       .btn {
         display: none;
       }
-
       .burger {
         display: block;
       }
@@ -727,7 +706,7 @@ align-items: flex-start;
 }
  
 
-  /*  menu page */
+  /*  menu page  Responsive*/
 
   .img-div-foods , .img-div-drinks , .img-div-liked{
     width: 100%;
@@ -743,7 +722,7 @@ align-items: flex-start;
    
   }
   
-  /* footer contact */
+  /* footer contact  Responsive*/
   .socialMedia{
     margin-bottom: 4rem;
   }
@@ -762,12 +741,11 @@ align-items: flex-start;
   text-align: center;
   font-weight: bolder;
 }
+/* Home page section One Resposive */
 
     .section-one{
    background: url("./assesst/image/newimg-mainpage2.png");
-   /* background-color: ; */
    height: 100vh;
-   /* width: 100vw; */
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -784,19 +762,15 @@ align-items: flex-start;
 }
 
 .hero-text > h3{
-  /* margin-top: 12rem; */
   font-size: 1.5rem;
 }
-
+/* Home page section two Responsive */
 .man-img {
   display: flex;
   align-items: center;
   position: relative;
-  /* margin: 3rem 6rem; */
   margin: 0;
-  /* gap: 6rem; */
   gap: 4rem;
-  /* font-size: 1.5rem; */
 }
 #img-about{
   width: 18rem;
